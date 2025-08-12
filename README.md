@@ -32,30 +32,8 @@ echo "< html > Parte de personalizacao do site </ html >" | sudo tee /var/www/ht
 
 sudo nano /usr/local/bin/monitoramento.sh
 
-#!/bin/bash
+<img width="812" height="613" alt="Script" src="https://github.com/user-attachments/assets/3848de29-87fa-4b0a-8f71-fd9c1ad82786" />
 
-URL="Ip do site"
-
-WEBHOOK_URL="Link do Webhook"
-
-LOG_FILE="/var/log/monitoramento.log"
-
-enviar_alerta() {
-    local mensagem="$1"
-    curl -H "Content-Type: application/json" \
-         -X POST \
-         -d "{\"content\": \"$mensagem\"}" \
-         "$WEBHOOK_URL"
-}
-
-HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
-
-if [ "$HTTP_CODE" -eq 200 ]; then
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - Site online." >> "$LOG_FILE"
-else
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - Site fora do ar Codigo: $HTTP_CODE" >> "$LOG_FILE"
-    enviar_alerta "O site $URL esta fora do ar Codigo: $HTTP_CODE"
-fi
 
 5- Dar permissoes e criar o log
 
