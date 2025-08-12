@@ -24,6 +24,7 @@ sudo systemctl start nginx
 echo "< html > Parte de personalizacao do site </ html >" | sudo tee /var/www/html/index.html
 
 4- Criar Script de monitoramento
+
 sudo nano /usr/local/bin/monitoramento.sh
 
 #!/bin/bash
