@@ -38,10 +38,6 @@ sudo nano /usr/local/bin/monitoramento.sh
 
 <img width="812" height="613" alt="Script" src="https://github.com/user-attachments/assets/3848de29-87fa-4b0a-8f71-fd9c1ad82786" />
 
-Com o comando ip a voce pode descobrir o ip do seu site
-
-<img width="1250" height="366" alt="ip" src="https://github.com/user-attachments/assets/f8908e30-405b-4d05-9891-889e5831ffcf" />
-
 5- Dar permissoes e criar o log
 
 sudo chmod +x /usr/local/bin/monitoramento.sh
