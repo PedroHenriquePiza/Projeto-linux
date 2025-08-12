@@ -2,7 +2,7 @@
 Este projeto implementa um servidor web Nginx em um ambiente Linux com monitoramento automatizado que gera notificações no Discord.
 
 Objetivo
-- Configurar um servidor ANginx em linux
+- Configurar um servidor Nginx em linux
 - Criar uma pagina html simples
 - Desenvolver um script de monitoramento
 - Configurar o Nginx para reiniciar automaticamente em caso de falha
