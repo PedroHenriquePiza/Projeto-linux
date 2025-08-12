@@ -14,6 +14,8 @@ Passo a passo de implementacao
 
 1- Preparar ambiente linux
 
+Instalar e iniciar o servidor linux
+
 2- Instalar e configurar o Nginx
 
 sudo apt install nginx -y
