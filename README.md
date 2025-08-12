@@ -33,7 +33,9 @@ sudo nano /usr/local/bin/monitoramento.sh
 #!/bin/bash
 
 URL="Ip do site"
+
 WEBHOOK_URL="Link do Webhook"
+
 LOG_FILE="/var/log/monitoramento.log"
 
 enviar_alerta() {
