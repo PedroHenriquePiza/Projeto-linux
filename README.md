@@ -17,7 +17,9 @@ Passo a passo de implementacao
 2- Instalar e configurar o Nginx
 
 sudo apt install nginx -y
+
 sudo systemctl enable nginx
+
 sudo systemctl start nginx
 
 3-Criar página HTML:
@@ -54,7 +56,9 @@ fi
 5- Dar permissoes e criar o log
 
 sudo chmod +x /usr/local/bin/monitoramento.sh
+
 sudo touch /var/log/monitoramento.log
+
 sudo chmod 666 /var/log/monitoramento.log
 
 6-Automatizar execucao com Cron
@@ -74,6 +78,7 @@ RestartSec=5
 8- Salvar e recarregar o nginx
 
 sudo systemctl daemon-reexec
+
 sudo systemctl restart nginx
 
 Logs
