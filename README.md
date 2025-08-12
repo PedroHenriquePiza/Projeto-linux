@@ -57,7 +57,9 @@ sudo crontab -e
 sudo systemctl edit nginx
 
 [Service]
+
 Restart=always
+
 RestartSec=5
 
 8- Salvar e recarregar o nginx
