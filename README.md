@@ -21,7 +21,7 @@ sudo systemctl start nginx
 
 3-Criar página HTML:
 
-echo "<html><h1>Projeto Linux</h1><p>Servidor ativo</p></html>" | sudo tee /var/www/html/index.html
+echo "<html> Parte de personalizacao do site </html>" | sudo tee /var/www/html/index.html
 
 4- Criar Script de monitoramento
 sudo nano /usr/local/bin/monitoramento.sh
