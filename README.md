@@ -68,8 +68,9 @@ sudo systemctl daemon-reexec
 
 sudo systemctl restart nginx
 
-Logs
+Verificacao de Logs
 
+cat /var/log/monitoramento.log
 
 <img width="684" height="149" alt="disc" src="https://github.com/user-attachments/assets/61840cf3-157c-49f2-806b-4c8423c57467" />
 
