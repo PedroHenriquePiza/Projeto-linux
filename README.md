@@ -32,11 +32,14 @@ sudo systemctl start nginx
 
 echo "< html > Parte de personalizacao do site </ html >" | sudo tee /var/www/html/index.html
 
-4- Criar Script de monitoramento
+4- Criar Script de monitoramento em bash
 
-sudo nano /usr/local/bin/monitoramento.sh
+
+acessar o local da criacao do script - sudo nano /usr/local/bin/monitoramento.sh
 
 <img width="812" height="613" alt="Script" src="https://github.com/user-attachments/assets/3848de29-87fa-4b0a-8f71-fd9c1ad82786" />
+
+esse script funciona da seguinte maneira no topo do codigo é a definicao das variaveis como site, webhook e caminho das logs , apos isso entra a funcao enviar alerta que recebe um texto mensagem="$1" e usa o curl para fazer o post no webhook. em seguida entra a verificacao do site em que o curl acessa o site e mostra o resultado com o http_code, em sequencia entra a mensagem em caso do site estar tudo ok http_code = 200 exibe a mensagem que o site esta funcionando normalmente caso contrario exibe que o site esta fora do ar.
 
 5- Dar permissoes e criar o log
 
